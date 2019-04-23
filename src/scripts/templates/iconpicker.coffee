@@ -47,8 +47,8 @@ umd this, (angular) ->
 		($templateCache) ->
 			$templateCache.put "templates/iconpicker.html",
 				"""
-				<span class="btn-group ui-iconpicker" ng-class="{ disabled: disabled }">
-					<button type="button" class="btn btn-default dropdown-toggle"><i class="{{ iconClass }}"></i><span class="caret"></span>
+				<span class="btn-group ui-iconpicker" uib-dropdown="" ng-class="{ disabled: disabled }">
+					<button uib-dropdown-toggle="" type="button" class="btn btn-default dropdown-toggle"><i class="{{ iconClass }}"></i><span class="caret"></span>
 					</button>
 					<ul class="dropdown-menu" role="menu">
 						<li ng-repeat="class in availableIconClasses">
